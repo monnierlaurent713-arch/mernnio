@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mernnio — Studio d'applications et de jeux mobiles</title>
+<meta name="description" content="Mernnio est un studio indépendant qui conçoit des applications et des jeux mobiles chaleureux, en France.">
+<style>
+  :root{
+    --bg:#1c130b;
+    --bg2:#2a1d12;
+    --panel:#33241598;
+    --ink:#f3e9cf;
+    --muted:#cdbfa6;
+    --accent:#c0632a;
+    --accent2:#e4a86b;
+    --border:#4a3621;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:Georgia,"Times New Roman",serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1000px 600px at 75% -10%, rgba(192,99,42,.28), transparent 60%),
+      linear-gradient(160deg,#2a1d12 0%,#3f2c1a 55%,#1c130b 100%);
+    background-attachment:fixed;
+    min-height:100vh;
+    line-height:1.6;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{padding:72px 0 40px;text-align:center}
+  .logo{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:92px;height:92px;border-radius:22px;
+    background:linear-gradient(145deg,#c0632a,#8a4119);
+    box-shadow:0 10px 30px rgba(0,0,0,.45), inset 0 2px 6px rgba(255,255,255,.18);
+    font-size:46px;font-weight:700;color:#fff6e8;margin-bottom:22px;
+    letter-spacing:-1px;
+  }
+  h1{font-size:clamp(40px,8vw,64px);margin:0 0 8px;letter-spacing:.5px}
+  .tagline{font-size:clamp(17px,3.2vw,21px);color:var(--accent2);margin:0 auto;max-width:620px}
+  .lead{color:var(--muted);max-width:640px;margin:22px auto 0;font-size:17px}
+  section{padding:30px 0}
+  h2{font-size:26px;border-bottom:2px solid rgba(192,99,42,.45);padding-bottom:10px;margin:0 0 24px}
+  .apps{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media (max-width:640px){.apps{grid-template-columns:1fr}}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:16px;padding:22px 24px;
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
+  }
+  .card h3{margin:0 0 6px;font-size:21px;color:#fff}
+  .card .kind{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--accent2);background:rgba(192,99,42,.16);border:1px solid rgba(192,99,42,.4);
+    padding:3px 10px;border-radius:999px;margin-bottom:12px}
+  .card p{margin:0;color:var(--muted);font-size:15.5px}
+  .contact{text-align:center;color:var(--muted)}
+  .contact a{color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(228,168,107,.4)}
+  .contact a:hover{color:#fff}
+  footer{text-align:center;padding:40px 0 60px;color:#8d7b61;font-size:14px;border-top:1px solid rgba(74,54,33,.6);margin-top:20px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <h1>Mernnio</h1>
+      <p class="tagline">Studio indépendant d'applications et de jeux mobiles</p>
+      <p class="lead">
+        Mernnio conçoit, en France, des applications et des jeux mobiles chaleureux —
+        pensés pour être beaux, simples et agréables à utiliser au quotidien.
+      </p>
+    </header>
+
+    <section>
+      <h2>Nos créations</h2>
+      <div class="apps">
+        <div class="card">
+          <span class="kind">Jeu · Fitness RPG</span>
+          <h3>FitQuest</h3>
+          <p>Transformez vos séances de sport en aventure : chaque entraînement fait
+             grandir votre héros en pixel art, débloque des quêtes, des défis et des trophées.</p>
+        </div>
+        <div class="card">
+          <span class="kind">Jeu · Cartes à collectionner</span>
+          <h3>Internet Memories</h3>
+          <p>Un jeu de cartes à collectionner autour des grands souvenirs d'Internet et
+             de la culture web — à rassembler dans votre classeur.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 style="text-align:left">Nous contacter</h2>
+      <p>Une question, un partenariat, une demande ?<br>
+         Écrivez-nous à <a href="mailto:mernnio.pro@mail.fr">mernnio.pro@mail.fr</a>.</p>
+    </section>
+
+    <footer>
+      © 2026 Mernnio — Studio d'applications et de jeux mobiles · France
+    </footer>
+  </div>
+</body>
+</html>
